@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>PowerBall</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Search Results</h1>
+                      <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Pick ID</th>
+                            <th>Name</th>
+                            <th>E-Mail</th>
+                            <th>State</th>
+                            <th>Balls</th>
+                            <th>PowerBall</th>
+                            <th>QuickPick</th>
+                            <th>Active</th> 
+                        </tr>
+                    </thead>
+                    <tbody>
+                <tr th:each="newNumbers: ${numbers}">
+                    <td th:text="${newNumbers.pickId}">1</td>
+                    <td th:text="${newNumbers.firstName} + ' '+ ${newNumbers.lastName}">John Doe</td>
+                    <td th:text="${newNumbers.eMail}">me@me.com</td>
+                    <td th:text="${newNumbers.stateName}">OH</td>
+                    <td th:text="${newNumbers.ball1} + ', ' + ${newNumbers.ball2} + ', ' +
+                        ${newNumbers.ball3} + ', ' + ${newNumbers.ball4} + ', ' + ${newNumbers.ball5}">1, 2, 3, 4, 5</td>
+                    <td th:text="${newNumbers.powerBall}">1</td>
+                    <td th:text="${newNumbers.quickPick}">1</td>
+                    <td th:text="${newNumbers.active}">1</td>
+                    </tbody>
+            </table>
+            <a href="/searchForPick" class="btn btn-primary">Search Again</a>
+            <a href="/" class="btn btn-primary">Return Home</a>
+    </body>
+</html>

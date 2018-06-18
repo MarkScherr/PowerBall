@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>PowerBall</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .col-md-3 {
+                text-align: right;
+            }
+            h1 {
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+            <h1>Search for PowerBall Pick</h1>
+            <form method="POST">
+                <div class="form">   
+                    <label for="numberPickId">Pick ID:</label>
+                    <input type="number" id="numberPickId" value="0" name="pickId" class="form-control">
+                </div>
+                <div class="form">   
+                    <label for="txtFirstName">First Name:</label>
+                    <input type="text" id="txtFirstName" name="firstName" class="form-control">
+                </div>
+                <div class="form">   
+                    <label for="txtLastName">Last Name:</label>
+                    <input type="text" id="txtLastName" name="lastName" class="form-control" >
+                </div>
+                <div class="form">   
+                    <label for="txtEMail">E-Mail:</label>
+                    <input type="text" id="txtEMail" name="eMail" class="form-control" >
+                </div>
+                  <div class="form-group">
+                    <label for="stateSelect">Chose State:</label>
+                    <select class="form-control" name ="stateName" id="stateName" >
+                        <option selected="selected"></option>
+                        <option value="AL">AL</option>
+                        <option value="AK">AK</option>
+                        <option value="AR">AR</option>	
+                        <option value="AZ">AZ</option>
+                        <option value="CA">CA</option>
+                        <option value="CO">CO</option>
+                        <option value="CT">CT</option>
+                        <option value="DC">DC</option>
+                        <option value="DE">DE</option>
+                        <option value="FL">FL</option>
+                        <option value="GA">GA</option>
+                        <option value="HI">HI</option>
+                        <option value="IA">IA</option>	
+                        <option value="ID">ID</option>
+                        <option value="IL">IL</option>
+                        <option value="IN">IN</option>
+                        <option value="KS">KS</option>
+                        <option value="KY">KY</option>
+                        <option value="LA">LA</option>
+                        <option value="MA">MA</option>
+                        <option value="MD">MD</option>
+                        <option value="ME">ME</option>
+                        <option value="MI">MI</option>
+                        <option value="MN">MN</option>
+                        <option value="MO">MO</option>	
+                        <option value="MS">MS</option>
+                        <option value="MT">MT</option>
+                        <option value="NC">NC</option>	
+                        <option value="NE">NE</option>
+                        <option value="NH">NH</option>
+                        <option value="NJ">NJ</option>
+                        <option value="NM">NM</option>			
+                        <option value="NV">NV</option>
+                        <option value="NY">NY</option>
+                        <option value="ND">ND</option>
+                        <option value="OH">OH</option>
+                        <option value="OK">OK</option>
+                        <option value="OR">OR</option>
+                        <option value="PA">PA</option>
+                        <option value="RI">RI</option>
+                        <option value="SC">SC</option>
+                        <option value="SD">SD</option>
+                        <option value="TN">TN</option>
+                        <option value="TX">TX</option>
+                        <option value="UT">UT</option>
+                        <option value="VT">VT</option>
+                        <option value="VA">VA</option>
+                        <option value="WA">WA</option>
+                        <option value="WI">WI</option>	
+                        <option value="WV">WV</option>
+                        <option value="WY">WY</option>
+                    </select>
+   
+                </div>
+                <div>
+                    <button  type="submit" class="btn btn-primary">Search</button>
+                    <a href="/" class="btn btn-primary">Cancel</a>
+                </div>
+
+            </form>
+
+        </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+    <title>Beer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <h1>Beer</h1>
+        <table class="table">
+          <tr>
+            <th>Beer Name</th>
+            <th>Brewery</th>
+            <th>Year</th>
+            <th>ABV</th>
+            <th>Beer Rating</th>
+          </tr>
+          <tr th:each="beer: ${beers}">
+            <td th:text="${beerName}">Pumking</td>
+            <td th:text="${breweryName}">Southern Tier</td>
+            <td th:text="${yearReleased}">1999</td>
+             <td th:text="${abv}">7.5</td>
+            <td th:text="${beerRating}">good</td>
+          </tr>
+            </thead>
+            <tbody id="bookContent">
+
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
